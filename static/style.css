@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 80px auto auto;
+    align-items: start;
+}
+
+html{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    padding-left: -20px;
+    padding-right: 0;
+}
+
+header h1{
+    text-align: center;
+}
+
+.navbar{
+  overflow: hidden;
+  background: #000;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  font-size: 14px;
+}
+
+.navbar ul{
+    margin:0;
+    margin:0 25%;
+}
+
+.navbar li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar li{
+    display: block;
+    text-align: center;
+    float: right;
+    padding: 14px 16px;
+}
+
+
+body{
+    margin:0;
+}
+
+body img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+footer{
+    display: block;
+    text-align: center;
+}
+
+.copyright{
+    text-align: center;
+    font-size:10px ;
+}
+
+.redes_sociais{
+    margin: 20px 0;
+}
+
+.redes_sociais img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align:center;
+}
+
+.page{
+    display: block;
+    margin:30px 25%;
+    text-align: justify;    
+}
+
+.logo{
+    max-width:300px;
+}
