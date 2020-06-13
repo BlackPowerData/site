@@ -4,5 +4,5 @@ install: "pip install git+https://github.com/lektor/lektor#egg=Lektor"
 script: "lektor build"
 deploy:
   provider: script
-  script: "lektor deploy ghpages-https"
+  script: "lektor deploy ghpages"
   
