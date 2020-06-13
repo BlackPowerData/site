@@ -1,11 +1,15 @@
-title: Somos o BlackPowerData
+title: BlackPowerData
 ---
 body:
 
-BlackPowerData é uma iniciativa para a libertação de dados voltados para o povo preto. Temos como objetivo transformar os dados em uma voz uníssona que pede por Justiça e Igualdade.
+BlackPowerData é uma iniciativa brasileira para a libertação de dados voltados para o povo preto. Temos como objetivo transformar os dados em uma voz uníssona que pede por Justiça e Igualdade.
 
 Nascemos da indignação de ver vidas que viraram apenas números perdidos em uma pilha de desculpas e justificativas.
 
 Através dos dados, queremos mostrar o que já é visto por todos, mas ignorados por muitos.
 
 O grupo foi criado em 2019 após o AfroPython Conf, primeira conferência de tecnologia voltada para negros no Brasil.
+---
+welcome-title: Somos BlackPowerData
+---
+welcome: Somos BlackPowerData
