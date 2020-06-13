@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="{{ '/static/style.css'|url }}">
+<title>{% block title %}BlackPowerData{% endblock %}</title>
+<div class='grid-container'>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav navbar-nav">
+        <li{% if this._path == '/' %} class="active"{% endif
+          %}><a href="{{ '/'|url }}">Home</a></li>
+        {% for href, title in [
+          ['/blog', 'Blog'],
+          ['/projects', 'Projects'],
+          ['/about', 'About']
+        ] %}
+          <li{% if this.is_child_of(href) %} class="active"{% endif
+            %}><a href="{{ href|url }}">{{ title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </header>
+ 
+  <body>
+      <a href="{{'/'|url }}"><img src="/static/images/logo.png" class="logo"></a>
+    <div class="page">
+      {% block body %}{% endblock %}
+    </div>
+  </body>  
+
+  <footer>
+    <div class='redes_sociais'>
+      <a href="https://twitter.com/BlackPowerData1"><img src="{{ base_url }}/static/images/twitter.png" alt="twitter" width="auto" height="50"></a>
+      <a href="mailto:blackpowerdata@gmail.com?subject=ContatoBPD"><img src="{{ base_url }}/static/images/mail.png" width="auto" height="50"></a>
+      <a href="https://github.com/BlackPowerData/"><img src="{{ base_url }}/static/images/GitHub_logo.png" width="auto" height="50"></a>
+    </div>
+    <div class='copyright'>
+      &copy; Copyright 2020 by BlackPowerData.
+    </div>
+  </footer>
+</div>  
+
