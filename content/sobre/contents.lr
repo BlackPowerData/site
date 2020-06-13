@@ -10,4 +10,4 @@ Através dos dados, queremos mostrar o que já é visto por todos, mas ignorados
 
 O grupo foi criado em 2019 após o AfroPython Conf - primeira conferência de tecnologia voltada para negros no Brasil.
 ---
-_template: landing-page.html
+_template: page.html
