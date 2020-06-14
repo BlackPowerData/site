@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+    <h2 class="text-center">{{ this.title }}</h2>
+    {{ this.body }}
+
+    <h2 class="text-center">Time</h2>
+    <div class="team-container">
+        {% for item in this.children.all() %}
+            {%- set complete_name = item.name + " " + item.last_name -%}
+            <div class="bio">
+                <img title="" class="img-responsive" src="/time/{{ item._id }}/{{ item.image }}" alt="">
+                <p class="text-center small">{{ item.job }}</p>
+                <a href="{{ item.site }}" target="_blank"><p class="text-center medium">{{ complete_name }}</p></a>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
