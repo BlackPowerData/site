@@ -11,13 +11,13 @@
   <header>
     <nav class="navbar">
       <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}>
+        <!-- <li{% if this._path == '/' %} class="active"{% endif
+          %}> -->
         {% for href, title in [
-          ['/blog', 'Blog'],
-          ['/projetos', 'Projetos'],
+          ['/', 'Home'],
           ['/sobre', 'Sobre'],
-          ['/', 'Home']
+          ['/blog', 'Blog'],
+          ['/projetos', 'Projetos']
         ] %}
           <li{% if this.is_child_of(href) %} class="active"{% endif
             %}><a href="{{ href|url }}">{{ title }}</a></li>

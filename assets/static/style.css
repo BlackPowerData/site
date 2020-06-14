@@ -21,6 +21,7 @@ header h1{
     text-align: center;
 }
 
+/****** menu ******/
 .navbar{
   overflow: hidden;
   background: #000;
@@ -32,7 +33,12 @@ header h1{
 
 .navbar ul{
     margin:0;
-    margin:0 25%;
+    padding: 0;
+    /* margin:0 25%; */
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    justify-content: center;
+    
 }
 
 .navbar li a{
@@ -44,10 +50,10 @@ header h1{
     display: block;
     text-align: center;
     float: right;
-    padding: 14px 16px;
+    padding: 14px 0;
 }
 
-
+/****** body ******/
 body{
     margin:0;
 }
@@ -63,6 +69,7 @@ body a{
     text-decoration: none;
 }
 
+/****** footer ******/
 footer{
     display: block;
     text-align: center;
@@ -103,7 +110,6 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
 }
-
 
 .bio {
     /* display: flex;
