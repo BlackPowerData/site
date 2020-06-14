@@ -1,21 +1,20 @@
 {% extends "layout.html" %}
+{% set members = site.query('/time', alt=this.alt).all() %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block body %}
     <h2 class="text-center">{{ this.title }}</h2>
     {{ this.body }}
-    
+
     <h2 class="text-center">Time</h2>
     <div class="team-container">
-        <div class="bio">
-            <img title="" class="img-responsive" src="/static/images/people/carla.jpg" alt="">
-            <p class="text-center small">Engenheira de Software</p>
-            <a href="https://carlavieira.dev/" target="_blank"><p class="text-center medium">Carla Vieira</p></a>
-        </div>
-        <div class=" bio">
-            <img title="" class="img-responsive" src="/static/images/people/carol.jpg" alt="">
-            <p class="text-center small">Cientista de Dados</p>
-            <a href="https://carolinedantas.com/" target="_blank"><p class="text-center medium">Carol Dantas</p></a>
-        </div>
+        {% for member in members %}
+            {%- set complete_name = member.name + " " + member.last_name -%}
+            <div class="bio">
+                <img title="" class="img-responsive" src="/time/{{ member._id }}/{{ member.image }}" alt="">
+                <p class="text-center small">{{ member.job }}</p>
+                <a href="{{ member.site }}" target="_blank"><p class="text-center medium">{{ complete_name }}</p></a>
+            </div>
+        {% endfor %}
     </div>
 {% endblock %}
 
