@@ -1,27 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
-.grid-container{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 80px auto auto;
-    align-items: start;
-}
-
 html{
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
 }
 
-header {
-    padding-left: -20px;
-    padding-right: 0;
+html a{
+    color: #8844ee;
+    text-decoration: none;
 }
 
-header h1{
-    text-align: center;
+.grid-container{
+    display: grid;
+    /* grid-template-columns: auto; */
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: 80px auto auto;
+    align-items: start;
+    padding: 0;
+    column-gap: 0px;
 }
 
 /****** menu ******/
+menu {
+    /* padding-left: -20px; */
+    padding: 0;
+    grid-column: span 12;
+}
+
+menu h1{
+    text-align: center;
+}
+
 .navbar{
   overflow: hidden;
   background: #000;
@@ -53,10 +62,29 @@ header h1{
     padding: 14px 0;
 }
 
-/****** body ******/
-body{
-    margin:0;
+/****** header ******/
+header {
+    padding: 0;
+    grid-column: span 12;
 }
+
+
+/****** body ******/
+body {
+    margin:0;    
+}
+
+body .page{
+    grid-column-start: 3;
+    grid-column-end: 11;
+    display: block;
+    text-align: justify;  
+}
+
+body .logo{
+    max-width:300px;
+}
+
 
 body img{
     margin-left: auto;
@@ -64,16 +92,13 @@ body img{
     display: block;
 }
 
-body a{
-    color: #8844ee;
-    text-decoration: none;
-}
-
 /****** footer ******/
 footer{
     display: block;
     text-align: center;
     margin-bottom: 30px;
+    grid-column-start: 3;
+    grid-column-end: 11;
 }
 
 .copyright{
@@ -91,16 +116,6 @@ footer{
     margin-right: 10px;
     display: inline-block;
     text-align:center;
-}
-
-.page{
-    display: block;
-    margin:30px 25%;
-    text-align: justify;    
-}
-
-.logo{
-    max-width:300px;
 }
 
 /* sobre page*/

@@ -8,11 +8,9 @@
 </head>
 <div class='grid-container'>
 
-  <header>
+  <menu>
     <nav class="navbar">
       <ul class="nav navbar-nav">
-        <!-- <li{% if this._path == '/' %} class="active"{% endif
-          %}> -->
         {% for href, title in [
           ['/', 'Home'],
           ['/sobre', 'Sobre'],
@@ -24,10 +22,14 @@
         {% endfor %}
       </ul>
     </nav>
+  </menu>
+
+
+  <header>
+    <a href="{{'/'|url }}"><img src="/static/images/logo.png" class="logo"></a>
   </header>
  
   <body>
-      <a href="{{'/'|url }}"><img src="/static/images/logo.png" class="logo"></a>
     <div class="page">
       {% block body %}{% endblock %}
     </div>
