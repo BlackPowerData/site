@@ -8,7 +8,7 @@
 <img src="assets/static/images/logo.png" alt="drawing" width="200" height="200"/>
 </div>
 
-# SITE
+# Site
 Site do projeto BlackPowerData feito em [Lektor](https://www.getlektor.com/)
 
 # Requerimentos
