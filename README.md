@@ -1,4 +1,4 @@
-<center> 
+<div align="center">
   
 # Site
 
@@ -11,7 +11,7 @@
 
 Site do projeto BlackPowerData, feito utilizando [Lektor](https://www.getlektor.com/).
 
-</center>
+</div>
 
 # Requerimentos
 - Python 3
