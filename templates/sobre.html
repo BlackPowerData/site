@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block body %}
+    <h2 class="text-center">{{ this.title }}</h2>
+    {{ this.body }}
+    
+    <h2 class="text-center">Time</h2>
+    <div class="team-container">
+        <div class="bio">
+            <img title="" class="img-responsive" src="/static/images/people/carla.jpg" alt="">
+            <p class="text-center small">Engenheira de Software</p>
+            <a href="https://carlavieira.dev/" target="_blank"><p class="text-center medium">Carla Vieira</p></a>
+        </div>
+        <div class=" bio">
+            <img title="" class="img-responsive" src="/static/images/people/carol.jpg" alt="">
+            <p class="text-center small">Cientista de Dados</p>
+            <a href="https://carolinedantas.com/" target="_blank"><p class="text-center medium">Carol Dantas</p></a>
+        </div>
+    </div>
+{% endblock %}
+

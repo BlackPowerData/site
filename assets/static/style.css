@@ -58,6 +58,11 @@ body img{
     display: block;
 }
 
+body a{
+    color: #8844ee;
+    text-decoration: none;
+}
+
 footer{
     display: block;
     text-align: center;
@@ -89,4 +94,52 @@ footer{
 
 .logo{
     max-width:300px;
+}
+
+/* sobre page*/
+.team-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.bio {
+    /* display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between; 
+    margin: 20px;
+}
+
+.bio img {
+    border-radius: 999px;
+    border: #000 3px solid;
+    max-width: 120px;
+}
+
+.bio h6 {
+    text-align: center;
+    margin-top: 0 !important;
+}
+
+.img-responsive{
+    display: block;
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.bio p {
+    margin: 5px 0 0 0;
+}
+.text-center {
+    text-align: center;
+}
+p.small{
+    font-weight: bold;
+    font-size: 14px;
+
+}
+p.medium{
+    font-size: 14px;
 }
